@@ -1,0 +1,4 @@
+build/
+.vscode
+tc-src/build/
+tc-src/test/build/

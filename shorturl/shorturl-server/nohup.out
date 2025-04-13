@@ -1,0 +1,6 @@
+cnf.Mysql.DSN:  root:123456@tcp(localhost:3306)/shorturl?collation=utf8mb4_unicode_ci&charset=utf8mb4
+InitMysql ok
+list: [] <nil>
+cnf.Mysql.DSN:  root:123456@tcp(localhost:3306)/shorturl?collation=utf8mb4_unicode_ci&charset=utf8mb4
+InitMysql ok
+list: [{1 l http://192.168.1.27:80/group1/M00/00/00/wKgBG2afJfaASLf1ACS3NQpVELk285.pdf  0 0} {2 m http://192.168.1.27:80/group1/M00/00/00/wKgBG2afJi-AGPPkAAEBrWcdUFc711.jpg  0 0}] <nil>

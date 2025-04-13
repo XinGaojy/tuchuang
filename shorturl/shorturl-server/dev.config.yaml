@@ -1,0 +1,27 @@
+server:
+  ip: 0.0.0.0
+  # port这里是提供rpc的服务端口，shorturl-proxy、tc_http_server访问grpc也要配置这里同样端口
+  port: 50051
+  # grpc访问验证，shorturl-proxy、tc_http_server也要携带同样的token
+  accessToken: "e8n05nr9jey84prEhw5u43th0yi294780yjr3h7sksSdkFdDngKi"
+redis:
+  host: "127.0.0.1"
+  port: 6379
+  # 如果没有密码则配置"",有具体密码则配置密码
+  pwd: ""
+mysql:
+  #根据自己mysql的用户名、密码、ip地址配置
+  dsn: "root:123456@tcp(localhost:3306)/shorturl?collation=utf8mb4_unicode_ci&charset=utf8mb4"
+  maxLifeTime: 3600
+  maxOpenConn: 10
+  maxIdleConn: 10
+# 短链的起始地址，如果有域名则把ip换成域名
+shortDomain:  http://192.168.1.27/p/
+# 短链的公共调用的地址，如果有域名则把ip换成域名，这行先不用关注，目前没有在图床使用
+userShortDomain: http://192.168.1.27/u/
+log:
+  # panic,fatal,error,warn,warning,info,debug,trace
+  # 设置日志级别
+  level: "info"
+  # 设置日志路径和日志名
+  logPath: "app.log"

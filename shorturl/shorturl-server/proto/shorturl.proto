@@ -1,0 +1,17 @@
+syntax = "proto3";
+option go_package = "shorturl/proto";
+package shorturl_voice;
+// 消息定义
+message Url {
+  string url = 1;
+  bool isPublic = 2;
+}
+message ShortKey {
+  string key = 1;
+  bool isPublic =2;
+}
+// 服务定义
+service ShortUrl {
+  rpc GetShortUrl(Url)returns(Url){}
+  rpc GetOriginalUrl(ShortKey)returns(Url){}
+}

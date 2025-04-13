@@ -1,0 +1,27 @@
+[GIN-debug] [WARNING] Creating an Engine instance with the Logger and Recovery middleware already attached.
+
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /health                   --> main.main.func1 (3 handlers)
+[GIN-debug] GET    /p/:short_key             --> shorturl-proxy/proxy.(*proxy).PublicProxy-fm (3 handlers)
+[GIN-debug] GET    /u/:short_key             --> shorturl-proxy/proxy.(*proxy).UserProxy-fm (3 handlers)
+[GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
+Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
+[GIN-debug] Listening and serving HTTP on 0.0.0.0:8082
+[GIN] 2024/07/23 - 12:00:22 | 302 |    28.91114ms |       127.0.0.1 | GET      "/p/P"
+[GIN] 2024/07/23 - 12:00:45 | 302 |    7.209281ms |       127.0.0.1 | GET      "/p/R"
+[GIN] 2024/07/23 - 12:01:05 | 302 |    6.625871ms |       127.0.0.1 | GET      "/p/R"
+[GIN-debug] [WARNING] Creating an Engine instance with the Logger and Recovery middleware already attached.
+
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /health                   --> main.main.func1 (3 handlers)
+[GIN-debug] GET    /p/:short_key             --> shorturl-proxy/proxy.(*proxy).PublicProxy-fm (3 handlers)
+[GIN-debug] GET    /u/:short_key             --> shorturl-proxy/proxy.(*proxy).UserProxy-fm (3 handlers)
+[GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
+Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
+[GIN-debug] Listening and serving HTTP on 0.0.0.0:8082

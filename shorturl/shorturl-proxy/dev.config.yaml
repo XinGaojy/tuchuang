@@ -1,0 +1,15 @@
+http:
+  ip: 0.0.0.0
+  # http短链转长链的代理服务端口
+  port: 8082
+dependOn:
+  shortUrl:
+    address: "localhost:50051"
+    # 需要和shorturl-server的accessToken保持一致（grpc使用）
+    accessToken: "e8n05nr9jey84prEhw5u43th0yi294780yjr3h7sksSdkFdDngKi"
+log:
+  # panic,fatal,error,warn,warning,info,debug,trace
+  # 日志级别
+  level: "info"
+  # 日志路径
+  logPath: "runtime/logs/app.log"
